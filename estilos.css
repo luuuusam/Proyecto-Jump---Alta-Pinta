@@ -1,0 +1,272 @@
+/******Fuente de la Pagina******/
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Merienda:wght@400;800&family=Montserrat:ital,wght@1,100;1,400;1,500&family=Poppins:wght@300;400&family=Shadows+Into+Light&family=Sofia+Sans:ital,wght@0,500;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+/**********Barra de Navegacion**********/
+a{
+    text-decoration: none;
+    color: #e63c80;
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #e0d1ed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+
+}
+nav a{
+    font-weight: 600;
+    /* padding: 0 20px; */
+    font-size: 12px;
+    text-align: center;
+}
+nav a:hover{
+    color: #4b004c;
+}
+.nav-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+.social-contenedor{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 626px) {
+    .nav-contenedor {
+        display: flex;
+        flex-direction: row;
+    }
+    nav a{
+        font-weight: 600;
+        padding: 0 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+/**********Inicio**********/
+main{
+    background-image: url(imagenes/fondo\ 4.png);
+    background-size: cover;
+    background-position: 80%;
+    height: 80vh;
+}
+.textoPresentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    height: 60vh; 
+    padding-top: 10%;
+}
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    color: #4b004c;
+}
+
+.subtitulo{
+    font-size: 20px;
+    text-align: center;
+    color: #4b004c;
+    width: 60%;
+}
+
+.textodeco{
+    font-size: 10px;
+    text-align: center;
+    color: #4b004c;
+}
+
+@media (min-width: 768px){
+    .textoPresentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding-top: 0;
+    }
+
+    .titulo{
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .textodeco{
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .titulo{
+        font-size: 80px;
+    }
+
+    .subtitulo{
+        font-size: 50px;
+    }
+
+    .textodeco{
+        font-size: 30px;
+    }
+}
+/**********Contacto**********/
+.main-contacto{
+    display: flex;
+    justify-content: center;
+    background-color: #e0d1ed;
+    background-size: cover;
+    background-position: center center;
+    background-image: none;
+    height: 80vh;
+    align-items: center;
+}
+
+.contacto-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 75vh;
+    background-color: white;
+    /* margin-left: 5%; */
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px grey;
+}
+@media (max-width: 600px){
+    .contacto-contenedor{
+        display: flex;
+        justify-content: center;
+        width: 200%;
+        margin-right: 5%;
+    }
+}
+
+.tituloPagina {
+    width: 100%;
+    text-align: center;
+}
+
+.iconos{
+    width: 30px;
+    padding-right: 10px;
+}
+
+.datosContacto {
+    width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 0 10%;
+    width: 100%;
+}
+h5 {
+    padding-bottom: 2%;
+}
+
+.mapa {
+    width: 80%;
+    height: 300px;
+    padding: 2% 0;
+    border: 1px solid;
+    width: 100%;
+}
+
+/**********Productos**********/
+.tituloProductos {
+    text-align: center;
+    color: #4b004c;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5 10%;
+}
+.contenidoprod{
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+.mostrador .fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.mostrador .fila .item:hover{
+    background-color: #e0d1ed;
+}
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0;
+}
+.mostrador .fila .item .descripcion{
+    color: #e63c80;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color: #e63c80;
+    font-weight: bold;
+    font-size: 20px;
+}
+/**********Pie de Pagina**********/
+footer{
+    background-color: #e0d1ed;
+    color: #e63c80;
+    font-weight: bold;
+    font-size: 8px;
+    padding: 1em 0;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 12px;
+    }
+}
