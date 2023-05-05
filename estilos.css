@@ -196,13 +196,23 @@ h3 {
         font-size: 30px;
     }
     .contactoContenedor h5{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .mainContacto{
         height: 80vh;
     }
    
+}
+@media (min-width: 1200px) {
+
+    .contactoContenedor h1{
+        font-size: 45px;
+    }
+    .contactoContenedor h5{
+        font-size: 17px;
+    }
+
 }
 
 .tituloPagina {
